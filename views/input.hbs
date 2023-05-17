@@ -2,12 +2,27 @@
 
 <form action="/output" method="post">
     <label for="">Name: </label>
-    <input type="text" name="ten" id=""><br>
+    <input type="text" name="name" id=""><br>
     <label for="">Age: </label>
-    <input type="number" name="tuoi" id=""><br>
+    <input type="number" name="age" id=""><br>
     <label for="">Email: </label>
     <input type="email" name="email" id=""><br>
-        <label for="">DOB: </label>
-    <input type="date" name="ngaysinh" id=""><br>
+    <label for="">DOB: </label>
+    <input type="date" name="dob" id=""><br>
+
+    <label for="">Gender: </label>
+    <input type="radio" name="gender" value="Male" id="" checked>Male
+    <input type="radio" name="gender" value="Female" id="">Female
+    <br>
+
+    <label for="">Major: </label>
+    <select name="major" id="">
+        <option value="IT">IT</option>
+        <option value="Business">Business</option>
+        <option value="Graphic Design">Graphic Design</option>
+    </select>
+    <br>
+
+
     <input type="submit" value="Add">
 </form>
