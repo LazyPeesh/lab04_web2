@@ -23,4 +23,22 @@ router.post('/output', (req, res) => {
   // res.render('output', { name : name, age: age, email: email, dob: dob });
 });
 
+router.get('/login', (req, res) => {
+  res.render('login');
+});
+
+router.post('/check', (req, res) => {
+  var username = req.body.username;
+  var password = req.body.password;
+
+  if (username == 'admin' && password == '123456') {
+    console.log(1);
+    res.send("<h1 style='color: red; background-color:lime;' >Login successfully!</h1>");
+  } else {
+    res.send("<h1 style='color: red; background-color:yellow;'>Login failed!</h1>");
+    console.log(1);
+  
+  }
+});
+
 module.exports = router;
