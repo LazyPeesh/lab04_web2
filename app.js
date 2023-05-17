@@ -10,6 +10,9 @@ var usersRouter = require('./routes/users');
 // 1. Khai báo thư viện body-parser để nhập liệu
 var bodyParser = require('body-parser');
 
+var port = process.env.PORT || 3001;
+
+
 var app = express();
 
 // view engine setup
@@ -44,4 +47,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.listen (port);
 module.exports = app;
